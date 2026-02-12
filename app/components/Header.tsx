@@ -86,6 +86,11 @@ export default function Header() {
                             <div className="absolute left-0 top-[100%] pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
                                 <ul className="bg-background border border-border shadow-lg rounded-lg py-2 min-w-[220px]">
                                     <li>
+                                        <Link href="/nosotros" className="block px-4 py-2 text-sm text-foreground hover:bg-muted hover:text-primary transition-colors border-b border-border/50 mb-1 font-bold">
+                                            Sobre Nosotros
+                                        </Link>
+                                    </li>
+                                    <li>
                                         <Link href="/entregas" className="block px-4 py-2 text-sm text-foreground hover:bg-muted hover:text-primary transition-colors">
                                             Información de entregas
                                         </Link>
