@@ -19,9 +19,9 @@ export default function Header() {
     const pathname = usePathname();
 
     const languages = [
-        { code: 'es', name: 'Español' },
-        { code: 'en', name: 'English' },
-        { code: 'zh', name: '中文' },
+        { code: 'es', name: 'Español', flag: '/flags/colombia.png' },
+        { code: 'en', name: 'English', flag: '/flags/united-states.png' },
+        { code: 'zh', name: '中文', flag: '/flags/china.png' },
     ];
 
     const currentLanguage = languages.find(l => l.code === locale)?.name || 'Español';
@@ -155,7 +155,14 @@ export default function Header() {
                     <DropdownMenu>
                         <DropdownMenuTrigger asChild>
                             <div className="flex items-center gap-[5px] text-sm cursor-pointer text-foreground hover:text-primary transition-colors outline-none">
-                                <Globe size={16} /> {currentLanguage} <ChevronDown size={12} />
+                                <Image
+                                    src={languages.find(l => l.code === locale)?.flag || '/flags/colombia.png'}
+                                    alt={currentLanguage}
+                                    width={20}
+                                    height={20}
+                                    className="mr-2"
+                                />
+                                {currentLanguage} <ChevronDown size={12} />
                             </div>
                         </DropdownMenuTrigger>
                         <DropdownMenuContent align="end" className="bg-background border-border shadow-xl">
@@ -165,6 +172,13 @@ export default function Header() {
                                     onClick={() => handleLanguageChange(lang.code)}
                                     className={`cursor-pointer ${locale === lang.code ? 'text-primary font-bold' : ''}`}
                                 >
+                                    <Image
+                                        src={lang.flag}
+                                        alt={lang.name}
+                                        width={20}
+                                        height={20}
+                                        className="mr-2"
+                                    />
                                     {lang.name}
                                 </DropdownMenuItem>
                             ))}

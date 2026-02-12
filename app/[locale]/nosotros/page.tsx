@@ -14,14 +14,14 @@ export default function NosotrosPage() {
                 <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-12">
                     <Link href="/" className="hover:text-primary transition-colors">Home</Link>
                     <ChevronRight size={14} />
-                    <span className="text-foreground font-medium">{t('title')}</span>
+                    <span className="text-foreground font-medium">{t('title_p1')} {t('title_p2')}</span>
                 </nav>
 
                 {/* Hero Section with Video */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-24">
                     <div className="space-y-6">
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground uppercase tracking-tight leading-none">
-                            {t('title').split(' ')[0]} <br /> <span className="text-primary tracking-widest">{t('title').split(' ')[1]}</span>
+                            {t('title_p1')} <br /> <span className="text-primary tracking-widest">{t('title_p2')}</span>
                         </h1>
                         <p className="text-xl text-muted-foreground leading-relaxed">
                             {t('subtitle')}

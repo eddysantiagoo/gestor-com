@@ -60,7 +60,8 @@
     "support_desc": "Nuestro equipo de expertos te asesora para encontrar la pieza exacta que necesitas."
   },
   "Nosotros": {
-    "title": "¿Quiénes Somos?",
+    "title_p1": "¿Quiénes",
+    "title_p2": "Somos?",
     "subtitle": "Somos una empresa dedicada a la importación, distribución y comercialización de repuestos de vehículos y maquinaria pesada.",
     "logistics_title": "Logística",
     "logistics_desc": "Contamos con rigurosos procesos internos administrativos y comerciales que nos permiten dar pronta respuesta a las necesidades de nuestros clientes.",

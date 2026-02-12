@@ -60,7 +60,8 @@
     "support_desc": "Our team of experts advises you to find the exact part you need."
   },
   "Nosotros": {
-    "title": "Who Are We?",
+    "title_p1": "Who",
+    "title_p2": "We Are",
     "subtitle": "We are a company dedicated to the import, distribution, and commercialization of vehicle and heavy machinery spare parts.",
     "logistics_title": "Logistics",
     "logistics_desc": "We have rigorous internal administrative and commercial processes that allow us to provide prompt response to our customers' needs.",

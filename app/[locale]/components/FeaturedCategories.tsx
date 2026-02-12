@@ -95,7 +95,9 @@ export default function FeaturedCategories() {
 
                 <div className="text-center mt-12">
                     <Link
-                        href="#"
+                        href="https://tienda.gestordepartes.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="inline-block py-4 px-10 bg-foreground text-background font-bold rounded-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300 uppercase tracking-wide shadow-lg"
                     >
                         {t('view_all')}
