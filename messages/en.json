@@ -9,7 +9,10 @@
     "terms": "Terms & Conditions",
     "returns": "Return Policy",
     "warranty": "Warranty Policy",
-    "contact": "Contact"
+    "contact": "Contact",
+    "search_placeholder": "Search parts, brands...",
+    "search_button": "Search",
+    "login": "Login"
   },
   "Hero": {
     "turbos_title": "TURBO\nCHARGERS.",
@@ -35,6 +38,15 @@
     "oils_filters": "Oils and filters",
     "parts_manual": "Parts manual"
   },
+  "BrandCarousel": {
+    "title": "Our Brands"
+  },
+  "CallToAction": {
+    "title": "Can't find the part you're looking for?",
+    "desc": "Our team of experts helps you locate any part in minutes. We have a global network of suppliers.",
+    "contact_sales": "Contact Sales",
+    "whatsapp_direct": "Direct WhatsApp"
+  },
   "WhyChooseUs": {
     "title": "Why Choose Us?",
     "desc": "Quality, trust, and experience in each of our parts.",
@@ -47,11 +59,89 @@
     "support_title": "Technical Support",
     "support_desc": "Our team of experts advises you to find the exact part you need."
   },
+  "Nosotros": {
+    "title": "Who Are We?",
+    "subtitle": "We are a company dedicated to the import, distribution, and commercialization of vehicle and heavy machinery spare parts.",
+    "logistics_title": "Logistics",
+    "logistics_desc": "We have rigorous internal administrative and commercial processes that allow us to provide prompt response to our customers' needs.",
+    "tech_title": "Technology",
+    "tech_desc": "We provide service with the best technological tools and a wide database that allows us to be at the forefront of the market.",
+    "experts_title": "Experts",
+    "experts_desc": "We have highly trained personnel and experts in the area who will provide you with the best attention, resolving your doubts and managing your products.",
+    "services_title": "Specialized Services",
+    "services_subtitle": "Maintenance and repair with top-of-the-line technicians",
+    "hydraulics_title": "Hydraulic Pumps",
+    "hydraulics_desc": "Specialized technicians with great experience in the maintenance and repair of hydraulic systems.",
+    "diesel_title": "Diesel Engines",
+    "diesel_desc": "Experts with over 30 years of experience ensuring the useful life of your engine.",
+    "swing_title": "Swing Motors",
+    "swing_desc": "Accurate diagnoses with state-of-the-art mobile equipment.",
+    "travel_title": "Travel Motors",
+    "travel_desc": "Comprehensive technical service with national coverage and cutting-edge equipment.",
+    "commitment_title": "Commitment to Quality",
+    "commitment_desc": "At Gestor de Partes, our mission is to keep your machinery operating at peak performance with the best spare parts on the market.",
+    "contact_now": "CONTACT NOW"
+  },
+  "Contacto": {
+    "title": "Contact Us",
+    "desc": "We are a company specialized in the import, distribution, and commercialization of spare parts for heavy machinery located in Medellín – Colombia.",
+    "attention_central": "Service Center",
+    "attention_desc": "Contact us through our phone lines and request personalized attention:",
+    "not_found_title": "Can't find the part you're looking for?",
+    "not_found_desc": "If you don't find the part you're looking for, contact us and request attention within minutes at one of our physical branches.",
+    "main_address": "Our Main Address",
+    "email": "Email",
+    "schedule": "Service Hours",
+    "weekdays": "Monday - Friday:",
+    "saturdays": "Saturdays:",
+    "work_with_us": "Work with us",
+    "work_desc": "Do you want to be part of our network of suppliers?",
+    "go_to_network": "GO TO THE NETWORK"
+  },
+  "Legal": {
+    "privacy_title": "Privacy Policies",
+    "privacy_subtitle": "At Gestor de Partes, we are committed to the security and protection of our users' data.",
+    "privacy_statement_title": "Privacy Statement",
+    "privacy_statement_desc": "GESTOR DE PARTES establishes the terms in which it uses and protects the information provided by its users. We ensure it will only be used according to the terms of this document.",
+    "info_collected_title": "Information Collected",
+    "info_collected_desc": "We may collect personal information such as: Name, email, and demographic information.",
+    "data_use_title": "Data Use",
+    "data_use_desc": "We use the information to provide the best possible service, particularly to maintain a registry of users and orders.",
+    "cookies_title": "Use of Cookies",
+    "cookies_desc": "Cookies serve to identify visited pages and their frequency for statistical analysis.",
+    "external_links_title": "External Links",
+    "external_links_desc": "This website may contain links to other sites of interest. We are not responsible for the protection of your data on those third parties.",
+    "control_info_title": "Control of Your Information",
+    "control_info_desc": "You can restrict the collection or use of your personal information at any time.",
+    "transparency_title": "Total Transparency",
+    "transparency_desc": "If you have any doubts about how we handle your data, you can contact our team directly.",
+    "terms_title": "Terms and Conditions",
+    "terms_subtitle": "This information may be subject to changes according to the processes and policies of Gestor de Partes.",
+    "returns_policy_title": "Return Policies",
+    "returns_policy_important": "Important: After 7 calendar days from the billing date, no returns are accepted.",
+    "returns_policy_rules": [
+      "Spare parts marked as non-returnable (*) have no return.",
+      "It is imperative that the parts are in perfect condition and in their original packaging.",
+      "100% of the value will be credited for errors attributable to the company.",
+      "If the error is not the company's, 80% of the value will be credited."
+    ],
+    "warranty_policy_title": "Warranty Policies",
+    "warranty_validity": "Validity: Starts from the delivery of the part.",
+    "warranty_coverage": "Coverage: Damage caused by manufacturing or material defects.",
+    "initiate_process": "Need to start a process?",
+    "send_email": "Send Email",
+    "call_support": "Call Support"
+  },
   "Footer": {
     "products": "PRODUCTS",
     "company": "COMPANY",
     "contact": "CONTACT",
     "rights": "All rights reserved.",
-    "slogan": "Your strategic ally in automotive spare parts and specialized equipment. Quality that moves the world."
+    "slogan": "Your strategic ally in automotive spare parts and specialized equipment. Quality that moves the world.",
+    "turbos": "Turbochargers",
+    "injectors": "Fuel Injectors",
+    "motor_parts": "Engine Parts",
+    "address": "Calle 32C 66C 64 Belén, Medellín",
+    "whatsapp_title": "Contact us on WhatsApp"
   }
 }

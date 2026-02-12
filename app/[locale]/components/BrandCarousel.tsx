@@ -1,5 +1,6 @@
 import Marquee from "@/components/ui/marquee";
 import Image from "next/image";
+import { useTranslations } from 'next-intl';
 
 const brandFiles = [
     "bobcat.svg", "case.svg", "caseih.svg", "caterpillar.svg", "chevrolet.svg",
@@ -28,6 +29,7 @@ const shuffleArray = (array: string[]) => {
 };
 
 export default function BrandCarousel() {
+    const t = useTranslations('BrandCarousel');
     // Shuffle brands on each render (or could be done in useEffect for client-side only consistency if needed, but simplistic here works for visual)
     // Note: In Next.js SSR, pure random here might cause hydration mismatch. 
     // To handle hydration mismatch, we'll just use the list as is or needs a client component wrapper.
@@ -45,7 +47,7 @@ export default function BrandCarousel() {
         <section className="py-10 bg-background overflow-hidden">
             <div className="max-w-[1200px] mx-auto px-5 mb-6">
                 <h2 className="text-2xl font-bold text-center text-foreground uppercase tracking-wide">
-                    Nuestras Marcas
+                    {t('title')}
                 </h2>
             </div>
 

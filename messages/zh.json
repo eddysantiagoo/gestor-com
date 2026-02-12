@@ -9,7 +9,10 @@
     "terms": "条款和条件",
     "returns": "退货政策",
     "warranty": "保修政策",
-    "contact": "联系我们"
+    "contact": "联系我们",
+    "search_placeholder": "搜索零件、品牌...",
+    "search_button": "搜索",
+    "login": "登录"
   },
   "Hero": {
     "turbos_title": "涡轮\n增压器。",
@@ -35,6 +38,15 @@
     "oils_filters": "机油和滤清器",
     "parts_manual": "零件手册"
   },
+  "BrandCarousel": {
+    "title": "我们的品牌"
+  },
+  "CallToAction": {
+    "title": "找不到您要找的零件？",
+    "desc": "我们的专家团队帮助您在几分钟内找到任何零件。我们拥有全球供应商网络。",
+    "contact_sales": "联系销售",
+    "whatsapp_direct": "直连 WhatsApp"
+  },
   "WhyChooseUs": {
     "title": "为什么选择我们？",
     "desc": "我们的每一个零件都具有质量、信任和经验。",
@@ -47,11 +59,89 @@
     "support_title": "技术支持",
     "support_desc": "我们的专家团队为您提供建议，帮助您找到所需的确切零件。"
   },
+  "Nosotros": {
+    "title": "我们是谁？",
+    "subtitle": "我们是一家致力于汽车和重型机械备件进口、分销和商业化的公司。",
+    "logistics_title": "物流",
+    "logistics_desc": "我们拥有严谨的内部行政和商业流程，使我们能够对客户的需求做出迅速响应。",
+    "tech_title": "技术",
+    "tech_desc": "我们提供最好的技术工具和广泛的数据库，使我们能够处于市场的最前沿。",
+    "experts_title": "专家",
+    "experts_desc": "我们拥有高素质的员工和该领域的专家，他们将为您提供最好的关注，解决您的疑虑并管理您的产品。",
+    "services_title": "专业服务",
+    "services_subtitle": "顶尖技术人员提供维护和修理服务",
+    "hydraulics_title": "液压泵",
+    "hydraulics_desc": "具有丰富液压系统维护和修理经验的专业技术人员。",
+    "diesel_title": "柴油发动机",
+    "diesel_desc": "拥有超过 30 年经验的专家，确保您的发动机使用寿命。",
+    "swing_title": "回转马达",
+    "swing_desc": "使用最先进的移动设备进行精确诊断。",
+    "travel_title": "行走马达",
+    "travel_desc": "遍布全国的综合技术服务和尖端设备。",
+    "commitment_title": "质量承诺",
+    "commitment_desc": "在 Gestor de Partes，我们的使命是使用市场上最好的备件让您的机械保持最佳性能运行。",
+    "contact_now": "立即联系"
+  },
+  "Contacto": {
+    "title": "联系我们",
+    "desc": "我们是一家专业从事重型机械备件进口、分销和商业化的公司，位于哥伦比亚麦德林。",
+    "attention_central": "服务中心",
+    "attention_desc": "通过我们的电话线与我们联系并请求个性化服务：",
+    "not_found_title": "找不到您要找的零件？",
+    "not_found_desc": "如果您找不到所需的备件，请联系我们，并在几分钟内在我们的一家实体分店获得服务。",
+    "main_address": "我们的主要地址",
+    "email": "电子邮件",
+    "schedule": "服务时间",
+    "weekdays": "周一至周五：",
+    "saturdays": "周六：",
+    "work_with_us": "与我们合作",
+    "work_desc": "您想成为我们供应商网络的一员吗？",
+    "go_to_network": "前往网络"
+  },
+  "Legal": {
+    "privacy_title": "隐私政策",
+    "privacy_subtitle": "在 Gestor de Partes，我们致力于保护用户数据的安全。",
+    "privacy_statement_title": "隐私声明",
+    "privacy_statement_desc": "GESTOR DE PARTES 确立了其使用和保护用户提供的信息的条款。我们确保仅根据本文件的条款使用这些信息。",
+    "info_collected_title": "收集的信息",
+    "info_collected_desc": "我们可能会收集个人信息，例如：姓名、电子邮件和人口统计信息。",
+    "data_use_title": "数据使用",
+    "data_use_desc": "我们使用这些信息是为了提供最好的服务，特别是为了维护用户和订单的登记。",
+    "cookies_title": "Cookie 的使用",
+    "cookies_desc": "Cookie 用于识别访问过的页面及其频率，以便进行统计分析。",
+    "external_links_title": "外部链接",
+    "external_links_desc": "本网站可能包含指向其他感兴趣网站的链接。我们不负责这些第三方对您的数据的保护。",
+    "control_info_title": "控制您的信息",
+    "control_info_desc": "您可以随时限制个人信息的收集或使用。",
+    "transparency_title": "完全透明",
+    "transparency_desc": "如果您对我们如何处理您的数据有任何疑问，可以直接联系我们的团队。",
+    "terms_title": "条款和条件",
+    "terms_subtitle": "此信息可能会根据 Gestor de Partes 的流程和政策而发生变化。",
+    "returns_policy_title": "退货政策",
+    "returns_policy_important": "重要提示：开票日期后 7 个日历日内不接受退货。",
+    "returns_policy_rules": [
+      "标记为不可退回 (*) 的备件不退货。",
+      "备件必须完好无损且采用原包装。",
+      "由于公司原因造成的错误将 100% 退款。",
+      "如果不是公司错误，将退还发票价值的 80%。"
+    ],
+    "warranty_policy_title": "保修政策",
+    "warranty_validity": "有效期：从备件交付之日起计算。",
+    "warranty_coverage": "保修范围：由制造或材料缺陷引起的损坏。",
+    "initiate_process": "需要启动流程吗？",
+    "send_email": "发送邮件",
+    "call_support": "呼叫支持"
+  },
   "Footer": {
     "products": "产品",
     "company": "公司",
     "contact": "联系方式",
     "rights": "版权所有。",
-    "slogan": "您在汽车零部件和专业设备方面的战略盟友。质量推动世界。"
+    "slogan": "您在汽车零部件和专业设备方面的战略盟友。质量推动世界。",
+    "turbos": "涡轮增压器",
+    "injectors": "燃油喷射器",
+    "motor_parts": "发动机零件",
+    "address": "Calle 32C 66C 64 Belén, Medellín",
+    "whatsapp_title": "通过 WhatsApp 联系我们"
   }
 }

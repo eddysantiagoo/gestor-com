@@ -67,17 +67,17 @@ export default function Header() {
                         <input
                             type="text"
                             className="w-full py-[10px] pr-[120px] pl-5 border border-input rounded-[25px] text-sm bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                            placeholder="Buscar refacciones, marcas de auto..."
+                            placeholder={t('search_placeholder')}
                         />
                         <button className="absolute right-[5px] top-1/2 -translate-y-1/2 bg-primary text-primary-foreground border-none py-2 px-[25px] rounded-[20px] font-bold cursor-pointer text-sm hover:opacity-90 transition-opacity flex items-center gap-2">
-                            <Search size={16} /> Buscar
+                            <Search size={16} /> {t('search_button')}
                         </button>
                     </div>
 
                     {/* Header Actions */}
                     <div className="flex items-center gap-[25px]">
                         <Link href="#" className="text-foreground no-underline text-sm flex items-center gap-[5px] hover:text-primary transition-colors">
-                            <User size={18} /> Iniciar sesión
+                            <User size={18} /> {t('login')}
                         </Link>
                         <Link href="#" className="text-foreground no-underline text-sm flex items-center gap-[5px] hover:text-primary transition-colors">
                             <ShoppingCart size={18} />

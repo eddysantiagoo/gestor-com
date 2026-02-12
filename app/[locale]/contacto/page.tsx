@@ -1,7 +1,9 @@
 import { ChevronRight, PhoneOutgoing, Mail, Clock, MapPin, Briefcase, ExternalLink } from "lucide-react";
-import Link from "next/link";
+import { Link } from "../../../i18n/navigation";
+import { useTranslations } from 'next-intl';
 
 export default function ContactoPage() {
+    const t = useTranslations('Contacto');
     const sedes = [
         { phone: "+57 301 4922306", sede: "Sede Belén", link: "573014922306" },
         { phone: "+57 320 6177170", sede: "Sede Belén", link: "573206177170" },
@@ -21,17 +23,17 @@ export default function ContactoPage() {
                 <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-12">
                     <Link href="/" className="hover:text-primary transition-colors">Home</Link>
                     <ChevronRight size={14} />
-                    <span className="text-foreground font-medium">Contáctanos</span>
+                    <span className="text-foreground font-medium">{t('title')}</span>
                 </nav>
 
                 {/* Header */}
                 <div className="mb-16">
                     <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4 uppercase tracking-tight">
-                        Contáctanos
+                        {t('title')}
                     </h1>
                     <div className="w-24 h-1 bg-primary rounded-full mb-6"></div>
                     <p className="text-muted-foreground text-lg leading-relaxed max-w-4xl">
-                        Somos una empresa especialista en importación, distribución y comercialización de repuestos para maquinaria pesada ubicada en Medellín – Colombia. Importamos repuestos para toda clase de maquinaria pesada. Identificación, localización, y distribución.
+                        {t('desc')}
                     </p>
                 </div>
 
@@ -42,10 +44,10 @@ export default function ContactoPage() {
                         <section className="bg-card border border-border rounded-3xl p-8 shadow-sm hover:border-primary transition-all duration-300">
                             <h2 className="text-2xl font-bold text-foreground mb-6 uppercase tracking-tight flex items-center gap-3">
                                 <PhoneOutgoing className="text-primary" size={24} />
-                                Central de Atención
+                                {t('attention_central')}
                             </h2>
                             <p className="text-muted-foreground mb-8">
-                                Comunícate con nosotros a través de nuestras líneas telefónicas y solicita atención personalizada:
+                                {t('attention_desc')}
                             </p>
 
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -69,9 +71,9 @@ export default function ContactoPage() {
                         </section>
 
                         <section className="bg-primary/5 border border-primary/20 rounded-3xl p-8">
-                            <h3 className="text-xl font-bold text-foreground mb-4 uppercase tracking-tighter">¿No encuentras el repuesto que buscas?</h3>
+                            <h3 className="text-xl font-bold text-foreground mb-4 uppercase tracking-tighter">{t('not_found_title')}</h3>
                             <p className="text-muted-foreground text-sm mb-6 leading-relaxed">
-                                Si no encuentras el repuesto que buscas contactanos y solicita tu atención en minutos en alguna de nuestras sedes físicas.
+                                {t('not_found_desc')}
                             </p>
 
                             <div className="space-y-4">
@@ -105,7 +107,7 @@ export default function ContactoPage() {
                         <div className="bg-card border border-border rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500">
                             <div className="p-8 border-b border-border">
                                 <h2 className="text-xl font-bold text-foreground uppercase tracking-tight flex items-center gap-3">
-                                    <MapPin className="text-primary" size={24} /> Nuestra Dirección Principal
+                                    <MapPin className="text-primary" size={24} /> {t('main_address')}
                                 </h2>
                             </div>
                             <div className="aspect-[16/9] w-full">
@@ -125,7 +127,7 @@ export default function ContactoPage() {
                             <div className="bg-muted/30 border border-border rounded-2xl p-6">
                                 <div className="flex items-center gap-3 mb-4 text-primary">
                                     <Mail size={20} />
-                                    <h3 className="font-bold uppercase text-xs tracking-widest text-foreground">Correo Electrónico</h3>
+                                    <h3 className="font-bold uppercase text-xs tracking-widest text-foreground">{t('email')}</h3>
                                 </div>
                                 <Link
                                     href="mailto:contacto@gestordepartes.com"
@@ -138,11 +140,11 @@ export default function ContactoPage() {
                             <div className="bg-muted/30 border border-border rounded-2xl p-6">
                                 <div className="flex items-center gap-3 mb-4 text-primary">
                                     <Clock size={20} />
-                                    <h3 className="font-bold uppercase text-xs tracking-widest text-foreground">Horarios de Atención</h3>
+                                    <h3 className="font-bold uppercase text-xs tracking-widest text-foreground">{t('schedule')}</h3>
                                 </div>
                                 <ul className="text-xs text-muted-foreground space-y-2 font-medium">
-                                    <li className="flex justify-between"><span>Lunes - Viernes:</span> <span className="text-foreground">8 AM - 6 PM</span></li>
-                                    <li className="flex justify-between"><span>Sábados:</span> <span className="text-foreground">8 AM - 4 PM</span></li>
+                                    <li className="flex justify-between"><span>{t('weekdays')}</span> <span className="text-foreground">8 AM - 6 PM</span></li>
+                                    <li className="flex justify-between"><span>{t('saturdays')}</span> <span className="text-foreground">8 AM - 4 PM</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -152,16 +154,16 @@ export default function ContactoPage() {
                             <div className="relative z-10">
                                 <div className="flex items-center gap-3 mb-2 text-primary">
                                     <Briefcase size={20} />
-                                    <h3 className="font-bold uppercase text-xs tracking-widest">Trabaja con nosotros</h3>
+                                    <h3 className="font-bold uppercase text-xs tracking-widest">{t('work_with_us')}</h3>
                                 </div>
                                 <p className="text-sm opacity-80 mb-4 max-w-[250px]">
-                                    ¿Quieres ser parte de nuestra red de proveedores?
+                                    {t('work_desc')}
                                 </p>
                                 <Link
                                     href="/trabajo"
                                     className="inline-flex items-center gap-2 bg-primary text-white py-2 px-5 rounded-xl font-bold text-xs hover:opacity-90 transition-all shadow-lg"
                                 >
-                                    IR A LA RED <ExternalLink size={14} />
+                                    {t('go_to_network')} <ExternalLink size={14} />
                                 </Link>
                             </div>
                             <div className="absolute right-[-20px] bottom-[-20px] opacity-10 group-hover:rotate-12 transition-transform duration-500">

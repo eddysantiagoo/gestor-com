@@ -9,7 +9,10 @@
     "terms": "Términos & Condiciones",
     "returns": "Políticas de devoluciones",
     "warranty": "Políticas de garantía",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "search_placeholder": "Buscar refacciones, marcas de auto...",
+    "search_button": "Buscar",
+    "login": "Iniciar sesión"
   },
   "Hero": {
     "turbos_title": "TURBO\nCARGADORES.",
@@ -35,6 +38,15 @@
     "oils_filters": "Aceites y filtros",
     "parts_manual": "Manual de partes"
   },
+  "BrandCarousel": {
+    "title": "Nuestras Marcas"
+  },
+  "CallToAction": {
+    "title": "¿No encuentras la parte que buscas?",
+    "desc": "Nuestro equipo de expertos te ayuda a localizar cualquier refacción en minutos. Contamos con una red global de proveedores.",
+    "contact_sales": "Contactar a Ventas",
+    "whatsapp_direct": "WhatsApp Directo"
+  },
   "WhyChooseUs": {
     "title": "¿Por qué elegirnos?",
     "desc": "Calidad, confianza y experiencia en cada una de nuestras piezas.",
@@ -47,11 +59,89 @@
     "support_title": "Soporte Técnico",
     "support_desc": "Nuestro equipo de expertos te asesora para encontrar la pieza exacta que necesitas."
   },
+  "Nosotros": {
+    "title": "¿Quiénes Somos?",
+    "subtitle": "Somos una empresa dedicada a la importación, distribución y comercialización de repuestos de vehículos y maquinaria pesada.",
+    "logistics_title": "Logística",
+    "logistics_desc": "Contamos con rigurosos procesos internos administrativos y comerciales que nos permiten dar pronta respuesta a las necesidades de nuestros clientes.",
+    "tech_title": "Tecnología",
+    "tech_desc": "Prestamos servicio con las mejores herramientas tecnológicas y una amplia base de datos que nos permiten estar a la vanguardia en el mercado.",
+    "experts_title": "Expertos",
+    "experts_desc": "Contamos con personal altamente capacitado y expertos en el área que le brindaran la mejor atención, resolviendo sus dudas y gestionando sus productos.",
+    "services_title": "Servicios Especializados",
+    "services_subtitle": "Mantenimiento y reparación con técnicos de alta gama",
+    "hydraulics_title": "Bombas Hidráulicas",
+    "hydraulics_desc": "Técnicos especializados con gran experiencia en el mantenimiento y reparación de sistemas hidráulicos.",
+    "diesel_title": "Motores Diésel",
+    "diesel_desc": "Expertos con más de 30 años de trayectoria garantizando la vida útil de su motor.",
+    "swing_title": "Motores de Giro",
+    "swing_desc": "Diagnósticos precisos con equipos móviles de última generación.",
+    "travel_title": "Motores de Traslación",
+    "travel_desc": "Servicio técnico integral con cobertura nacional y equipos de vanguardia.",
+    "commitment_title": "Compromiso con la Calidad",
+    "commitment_desc": "En Gestor de Partes, nuestra misión es mantener su maquinaria operando al máximo rendimiento con los mejores repuestos del mercado.",
+    "contact_now": "CONTACTAR AHORA"
+  },
+  "Contacto": {
+    "title": "Contáctanos",
+    "desc": "Somos una empresa especialista en importación, distribución y comercialización de repuestos para maquinaria pesada ubicada en Medellín – Colombia.",
+    "attention_central": "Central de Atención",
+    "attention_desc": "Comunícate con nosotros a través de nuestras líneas telefónicas y solicita atención personalizada:",
+    "not_found_title": "¿No encuentras el repuesto que buscas?",
+    "not_found_desc": "Si no encuentras el repuesto que buscas contactanos y solicita tu atención en minutos en alguna de nuestras sedes físicas.",
+    "main_address": "Nuestra Dirección Principal",
+    "email": "Correo Electrónico",
+    "schedule": "Horarios de Atención",
+    "weekdays": "Lunes - Viernes:",
+    "saturdays": "Sábados:",
+    "work_with_us": "Trabaja con nosotros",
+    "work_desc": "¿Quieres ser parte de nuestra red de proveedores?",
+    "go_to_network": "IR A LA RED"
+  },
+  "Legal": {
+    "privacy_title": "Políticas de Privacidad",
+    "privacy_subtitle": "En Gestor de Partes estamos comprometidos con la seguridad y protección de los datos de nuestros usuarios.",
+    "privacy_statement_title": "Declaración de Privacidad",
+    "privacy_statement_desc": "GESTOR DE PARTES establece los términos en que usa y protege la información proporcionada por sus usuarios. Aseguramos que sólo se empleará de acuerdo con los términos de este documento.",
+    "info_collected_title": "Información Recogida",
+    "info_collected_desc": "Podremos recoger información personal como: Nombre, correo electrónico e información demográfica.",
+    "data_use_title": "Uso de los Datos",
+    "data_use_desc": "Empleamos la información para proporcionar el mejor servicio posible, particularmente para mantener un registro de usuarios y pedidos.",
+    "cookies_title": "Uso de Cookies",
+    "cookies_desc": "Las cookies sirven para identificar las páginas que son visitadas y su frecuencia para análisis estadístico.",
+    "external_links_title": "Enlaces Externos",
+    "external_links_desc": "Este sitio web pudiera contener enlaces a otros sitios de interés. No somos responsables de la protección de sus datos en esos terceros.",
+    "control_info_title": "Control de su Información",
+    "control_info_desc": "Usted puede restringir la recopilación o el uso de su información personal en cualquier momento.",
+    "transparency_title": "Transparencia Total",
+    "transparency_desc": "Si tiene alguna duda sobre cómo manejamos sus datos, puede contactar con nuestro equipo directamente.",
+    "terms_title": "Términos y Condiciones",
+    "terms_subtitle": "Esta información puede someterse a cambios de acuerdo a los procesos y políticas de Gestor de Partes.",
+    "returns_policy_title": "Políticas de Devoluciones",
+    "returns_policy_important": "Importante: Después de 7 días calendario de la fecha de facturación, no se aceptan devoluciones.",
+    "returns_policy_rules": [
+      "Los repuestos marcados como no retornables (*) no tienen devolución.",
+      "Es imperativo que los repuestos estén en perfecto estado y en su empaque original.",
+      "Se acreditará el 100% del valor por errores de la empresa.",
+      "Si el error no es de la empresa, se acreditará el 80% del valor."
+    ],
+    "warranty_policy_title": "Políticas de Garantías",
+    "warranty_validity": "Vigencia: Comienza desde la entrega del repuesto.",
+    "warranty_coverage": "Cobertura: Daños causados por defectos de fabricación o material.",
+    "initiate_process": "¿Necesitas iniciar un proceso?",
+    "send_email": "Enviar Correo",
+    "call_support": "Llamar Soporte"
+  },
   "Footer": {
     "products": "PRODUCTOS",
     "company": "COMPAÑÍA",
     "contact": "CONTACTO",
     "rights": "Todos los derechos reservados.",
-    "slogan": "Tu aliado estratégico en refacciones automotrices y equipo especializado. Calidad que mueve al mundo."
+    "slogan": "Tu aliado estratégico en refacciones automotrices y equipo especializado. Calidad que mueve al mundo.",
+    "turbos": "Turbocargadores",
+    "injectors": "Inyectores de inyección",
+    "motor_parts": "Partes de Motor",
+    "address": "Calle 32C 66C 64 Belén, Medellín",
+    "whatsapp_title": "Contáctanos por WhatsApp"
   }
 }
