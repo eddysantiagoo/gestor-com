@@ -158,7 +158,7 @@ export default function ContactoPage() {
                                     ¿Quieres ser parte de nuestra red de proveedores?
                                 </p>
                                 <Link
-                                    href="https://www.gestordepartes.com/trabajo"
+                                    href="/trabajo"
                                     className="inline-flex items-center gap-2 bg-primary text-white py-2 px-5 rounded-xl font-bold text-xs hover:opacity-90 transition-all shadow-lg"
                                 >
                                     IR A LA RED <ExternalLink size={14} />

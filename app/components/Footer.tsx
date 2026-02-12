@@ -52,15 +52,17 @@ export default function Footer() {
                             <h3 className="text-[14px] font-bold mb-5 uppercase tracking-[1px]">CONTACTO</h3>
                             <div className="flex items-center gap-[10px] mb-3 text-[#999] text-[13px]">
                                 <Mail size={16} />
-                                <span>ventas@gestordepartes.com</span>
+                                <span>contacto@gestordepartes.com</span>
                             </div>
                             <div className="flex items-center gap-[10px] mb-3 text-[#999] text-[13px]">
                                 <Phone size={16} />
-                                <span>+33 61 54 4063</span>
+                                <span>+57 301 4922306</span>
                             </div>
-                            <div className="flex items-center gap-[10px] mb-3 text-[#999] text-[13px]">
-                                <MapPin size={16} />
-                                <span>Ciudad de México, CDMX</span>
+                            <div className="flex flex-col gap-2 text-[#999] text-[13px]">
+                                <div className="flex items-start gap-[10px]">
+                                    <MapPin size={16} className="mt-1 flex-shrink-0" />
+                                    <span>Calle 32C 66C 64 Belén, Medellín</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -68,7 +70,7 @@ export default function Footer() {
                     {/* Footer Bottom */}
                     <div className="border-t border-[#333] pt-[20px] text-center">
                         <p className="text-[#666] text-[12px]">
-                            &copy; 2025 Gestor de Partes. Todos los derechos reservados.
+                            &copy; 2026 Gestor de Partes. Todos los derechos reservados.
                         </p>
                     </div>
                 </div>
@@ -76,7 +78,7 @@ export default function Footer() {
 
             {/* WhatsApp Button */}
             <a
-                href="https://wa.me/523361544063"
+                href="https://wa.me/573014922306"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="fixed bottom-[30px] right-[30px] w-[60px] h-[60px] bg-[#25D366] rounded-full flex items-center justify-center shadow-[0_4px_12px_rgba(0,0,0,0.3)] cursor-pointer transition-transform hover:scale-110 z-[1000]"
