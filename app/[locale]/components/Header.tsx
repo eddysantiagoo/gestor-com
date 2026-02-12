@@ -21,6 +21,7 @@ export default function Header() {
     const pathname = usePathname();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const [searchQuery, setSearchQuery] = useState('');
 
     useEffect(() => {
         const handleScroll = () => {
@@ -40,6 +41,14 @@ export default function Header() {
 
     const handleLanguageChange = (newLocale: string) => {
         router.replace(pathname, { locale: newLocale });
+    };
+
+    const handleSearch = (e?: React.FormEvent) => {
+        if (e) e.preventDefault();
+        if (searchQuery.trim()) {
+            const searchUrl = `https://tienda.gestordepartes.com/${locale}/products?query=${encodeURIComponent(searchQuery.trim())}`;
+            window.open(searchUrl, '_blank');
+        }
     };
 
     const navLinks = [
@@ -93,21 +102,24 @@ export default function Header() {
                     </motion.div>
 
                     {/* Desktop Search */}
-                    <div className="hidden md:flex flex-grow max-w-[500px] relative items-center group">
+                    <form onSubmit={handleSearch} className="hidden md:flex flex-grow max-w-[500px] relative items-center group">
                         <motion.input
                             whileFocus={{ scale: 1.02 }}
                             type="text"
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
                             className="w-full py-2.5 pr-32 pl-5 border border-input rounded-full text-sm bg-background/50 focus:bg-background transition-all outline-none ring-primary/20 focus:ring-4"
                             placeholder={t('search_placeholder')}
                         />
                         <motion.button
+                            type="submit"
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
                             className="absolute right-1 top-1 bottom-1 bg-primary text-primary-foreground px-6 rounded-full font-bold text-xs flex items-center gap-2"
                         >
                             <Search size={14} /> <span className="hidden lg:inline">{t('search_button')}</span>
                         </motion.button>
-                    </div>
+                    </form>
 
                     {/* Desktop Actions */}
                     <div className="hidden md:flex items-center gap-6">
@@ -249,14 +261,18 @@ export default function Header() {
                             className="absolute top-full right-0 w-[85%] max-w-sm h-[calc(100vh-64px)] bg-background border-l border-border shadow-2xl p-6 md:hidden overflow-y-auto"
                         >
                             {/* Mobile Search */}
-                            <div className="relative mb-8">
+                            <form onSubmit={handleSearch} className="relative mb-8">
                                 <input
                                     type="text"
+                                    value={searchQuery}
+                                    onChange={(e) => setSearchQuery(e.target.value)}
                                     className="w-full py-3 px-5 border border-input rounded-xl text-sm bg-muted focus:bg-background outline-none focus:ring-2 focus:ring-primary"
                                     placeholder={t('search_placeholder')}
                                 />
-                                <Search className="absolute right-4 top-3.5 text-muted-foreground" size={18} />
-                            </div>
+                                <button type="submit" className="absolute right-4 top-3.5 text-muted-foreground">
+                                    <Search size={18} />
+                                </button>
+                            </form>
 
                             {/* Mobile Links */}
                             <div className="space-y-6">
