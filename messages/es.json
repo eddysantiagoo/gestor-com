@@ -133,6 +133,14 @@
     "send_email": "Enviar Correo",
     "call_support": "Llamar Soporte"
   },
+  "NotFound": {
+    "title": "404",
+    "subtitle": "¡Ups! Te has perdido en el espacio...",
+    "description": "Parece que la página que buscas no existe o uno de nuestros desarrolladores se quedó dormido.",
+    "login": "INICIAR SESIÓN",
+    "contact": "CONTACTO",
+    "home": "VOLVER AL INICIO"
+  },
   "Footer": {
     "products": "PRODUCTOS",
     "company": "COMPAÑÍA",

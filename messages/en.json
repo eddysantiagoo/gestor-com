@@ -133,6 +133,14 @@
     "send_email": "Send Email",
     "call_support": "Call Support"
   },
+  "NotFound": {
+    "title": "404",
+    "subtitle": "Oops! You're lost in space...",
+    "description": "It looks like the page you're looking for doesn't exist or one of our developers fell asleep.",
+    "login": "LOGIN",
+    "contact": "CONTACT",
+    "home": "GO BACK HOME"
+  },
   "Footer": {
     "products": "PRODUCTS",
     "company": "COMPANY",

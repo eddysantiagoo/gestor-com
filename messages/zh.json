@@ -133,6 +133,14 @@
     "send_email": "发送邮件",
     "call_support": "呼叫支持"
   },
+  "NotFound": {
+    "title": "404",
+    "subtitle": "哎呀！你在太空中迷路了...",
+    "description": "看来您要找的页面不存在，或者我们的一个开发人员睡着了。",
+    "login": "登录",
+    "contact": "联系我们",
+    "home": "返回首页"
+  },
   "Footer": {
     "products": "产品",
     "company": "公司",
