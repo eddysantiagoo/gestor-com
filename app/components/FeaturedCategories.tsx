@@ -3,44 +3,44 @@ import Link from 'next/link';
 const categories = [
     {
         id: 1,
-        title: 'Motores Diésel',
-        image: 'https://images.unsplash.com/photo-1595183321522-834c9c7f1a3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-        link: '#',
+        title: 'Repuestos para motor',
+        image: '/categories/1.webp',
+        link: 'https://tienda.gestordepartes.com/es/categories/turbos/products',
         gridClass: 'md:col-span-2 md:row-span-2'
     },
     {
         id: 2,
-        title: 'Transmisiones',
-        image: 'https://images.unsplash.com/photo-1616401666679-b1d5c2e9d2f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-        link: '#',
+        title: 'Tren de rodaje',
+        image: '/categories/2.webp',
+        link: 'https://tienda.gestordepartes.com/es/categories/tren-de-rodaje/products',
         gridClass: 'md:col-span-2 md:row-span-1'
     },
     {
         id: 3,
-        title: 'Sistemas Hidráulicos',
-        image: 'https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-        link: '#',
+        title: 'Cigüeñal de motor',
+        image: '/categories/3.webp',
+        link: 'https://tienda.gestordepartes.com/es/categories/filtros/products',
         gridClass: 'md:col-span-1 md:row-span-1'
     },
     {
         id: 4,
-        title: 'Tren de Rodaje',
-        image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-        link: '#',
+        title: 'Lubricantes de alta calidad',
+        image: '/categories/4.webp',
+        link: 'https://tienda.gestordepartes.com/es/categories/lubricantes/products',
         gridClass: 'md:col-span-1 md:row-span-1'
     },
     {
         id: 5,
-        title: 'Cabinas y Lunas',
-        image: 'https://images.unsplash.com/photo-1542621334-a254cf47733d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-        link: '#',
+        title: 'Aceites y filtros',
+        image: '/categories/5.webp',
+        link: 'https://tienda.gestordepartes.com/es/categories/filtros/products',
         gridClass: 'md:col-span-2 md:row-span-1'
     },
     {
         id: 6,
-        title: 'Mandos Finales',
-        image: 'https://images.unsplash.com/photo-1531297461136-82lw8e2d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-        link: '#',
+        title: 'Manual de partes',
+        image: '/categories/6.webp',
+        link: 'https://catalogo.gestordepartes.com/catalog',
         gridClass: 'md:col-span-2 md:row-span-1'
     }
 ];
@@ -64,6 +64,8 @@ export default function FeaturedCategories() {
                         <Link
                             href={category.link}
                             key={category.id}
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className={`group relative block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 bg-card ${category.gridClass}`}
                         >
                             {/* Image Container */}

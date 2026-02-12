@@ -7,21 +7,21 @@ const slides = [
     {
         title: "TURBO\nCARGADORES.",
         description: "¡Compra ahora y siente la diferencia! Potencia industrial garantizada para maquinaria pesada.",
-        image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+        image: "/banner/1.webp",
         action: "VER CATÁLOGO",
         link: "#"
     },
     {
         title: "EXCAVADORAS\nPESADAS.",
         description: "Componentes críticos para excavadoras de alto rendimiento. Mantenemos tu obra en movimiento con refacciones premium.",
-        image: "https://images.unsplash.com/photo-1578319439584-104c94d37305?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+        image: "/banner/2.webp",
         action: "EXPLORAR PARTES",
         link: "#"
     },
     {
         title: "MOTORES\nDIESEL.",
         description: "Motores completos y refacciones internas. Durabilidad extrema para las condiciones industriales más exigentes.",
-        image: "https://images.unsplash.com/photo-1635339001026-61427848744b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80",
+        image: "/banner/3.webp",
         action: "VER MOTORES",
         link: "#"
     }
@@ -109,8 +109,8 @@ export default function Hero() {
                         key={index}
                         onClick={() => setCurrent(index)}
                         className={`transition-all duration-300 ${index === current
-                                ? "w-10 h-2 bg-primary rounded-full"
-                                : "w-2 h-2 bg-white/50 rounded-full hover:bg-white"
+                            ? "w-10 h-2 bg-primary rounded-full"
+                            : "w-2 h-2 bg-white/50 rounded-full hover:bg-white"
                             }`}
                         aria-label={`Go to slide ${index + 1}`}
                     ></button>
