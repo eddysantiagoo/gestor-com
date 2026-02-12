@@ -118,6 +118,11 @@ export default function Header() {
                                 </ul>
                             </div>
                         </li>
+                        <li>
+                            <Link href="/contacto" className="text-foreground no-underline text-sm font-medium hover:text-primary transition-colors flex items-center">
+                                Contacto
+                            </Link>
+                        </li>
                     </ul>
                     <div className="flex items-center gap-[5px] text-sm cursor-pointer text-foreground">
                         <Globe size={16} /> Español <ChevronDown size={12} />
