@@ -11,7 +11,7 @@ export default function Header() {
                 <div className="max-w-[1200px] mx-auto flex justify-between items-center px-5">
                     {/* Logo */}
                     <div className="flex items-center gap-[5px]">
-                        <div>
+                        <Link href="/">
                             <div className="flex items-center">
                                 {/* Light Mode Logo */}
                                 <Image
@@ -33,7 +33,7 @@ export default function Header() {
                                 />
                             </div>
 
-                        </div>
+                        </Link>
                     </div>
 
                     {/* Search Container */}
@@ -67,12 +67,12 @@ export default function Header() {
                 <div className="max-w-[1200px] mx-auto flex justify-between items-center px-5">
                     <ul className="flex gap-[30px] list-none p-0 m-0 items-center">
                         <li>
-                            <Link href="#" className="text-foreground no-underline text-sm font-medium hover:text-primary transition-colors flex items-center">
+                            <Link href="https://tienda.gestordepartes.com/" target='_blank' className="text-foreground no-underline text-sm font-medium hover:text-primary transition-colors flex items-center">
                                 Tienda
                             </Link>
                         </li>
                         <li>
-                            <Link href="#" className="text-foreground no-underline text-sm font-medium hover:text-primary transition-colors flex items-center">
+                            <Link href="https://catalogo.gestordepartes.com/" target='_blank' className="text-foreground no-underline text-sm font-medium hover:text-primary transition-colors flex items-center">
                                 Catalogos
                             </Link>
                         </li>
@@ -84,25 +84,30 @@ export default function Header() {
 
                             {/* Dropdown Content */}
                             <div className="absolute left-0 top-[100%] pt-4 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
-                                <ul className="bg-background border border-border shadow-lg rounded-lg py-2 min-w-[200px]">
+                                <ul className="bg-background border border-border shadow-lg rounded-lg py-2 min-w-[220px]">
                                     <li>
-                                        <Link href="#" className="block px-4 py-2 text-sm text-foreground hover:bg-muted hover:text-primary transition-colors">
-                                            Políticas de devolución
+                                        <Link href="/entregas" className="block px-4 py-2 text-sm text-foreground hover:bg-muted hover:text-primary transition-colors">
+                                            Información de entregas
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="#" className="block px-4 py-2 text-sm text-foreground hover:bg-muted hover:text-primary transition-colors">
-                                            Trabaja con nosotros
+                                        <Link href="/privacidad" className="block px-4 py-2 text-sm text-foreground hover:bg-muted hover:text-primary transition-colors">
+                                            Políticas de privacidad
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="#" className="block px-4 py-2 text-sm text-foreground hover:bg-muted hover:text-primary transition-colors">
-                                            Nuestra Misión
+                                        <Link href="/terminos" className="block px-4 py-2 text-sm text-foreground hover:bg-muted hover:text-primary transition-colors">
+                                            Términos & Condiciones
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="#" className="block px-4 py-2 text-sm text-foreground hover:bg-muted hover:text-primary transition-colors">
-                                            Preguntas Frecuentes
+                                        <Link href="/devoluciones" className="block px-4 py-2 text-sm text-foreground hover:bg-muted hover:text-primary transition-colors">
+                                            Políticas de devoluciones
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/garantias" className="block px-4 py-2 text-sm text-foreground hover:bg-muted hover:text-primary transition-colors">
+                                            Políticas de garantía
                                         </Link>
                                     </li>
                                 </ul>
