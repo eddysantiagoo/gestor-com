@@ -40,9 +40,9 @@ export default function Footer() {
                         <div>
                             <h3 className="text-[14px] font-bold mb-5 uppercase tracking-[1px]">COMPAÑÍA</h3>
                             <ul className="list-none p-0 m-0 space-y-3">
-                                <li><Link href="#" className="text-[#999] no-underline text-[13px] hover:text-primary transition-colors">Sobre Nosotros</Link></li>
-                                <li><Link href="#" className="text-[#999] no-underline text-[13px] hover:text-primary transition-colors">Blog</Link></li>
-                                <li><Link href="#" className="text-[#999] no-underline text-[13px] hover:text-primary transition-colors">Bolsa de Trabajo</Link></li>
+                                <li><Link href="/nosotros" className="text-[#999] no-underline text-[13px] hover:text-primary transition-colors">Sobre Nosotros</Link></li>
+                                <li><Link href="/privacidad" className="text-[#999] no-underline text-[13px] hover:text-primary transition-colors">Privacidad</Link></li>
+                                <li><Link href="/terminos" className="text-[#999] no-underline text-[13px] hover:text-primary transition-colors">Términos</Link></li>
                             </ul>
                         </div>
 

@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function DevolucionesPage() {
     return (
         <main className="min-h-screen py-16 bg-background">
-            <div className="max-w-[1000px] mx-auto px-5">
+            <div className="max-w-[1200px] mx-auto px-5">
 
                 {/* Breadcrumb */}
                 <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-12">
@@ -14,12 +14,12 @@ export default function DevolucionesPage() {
                 </nav>
 
                 {/* Header */}
-                <div className="mb-12">
+                <div className="mb-16">
                     <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4 uppercase tracking-tight">
                         Nuestras Políticas de Devoluciones
                     </h1>
                     <div className="w-24 h-1 bg-primary rounded-full mb-6"></div>
-                    <p className="text-muted-foreground text-lg leading-relaxed">
+                    <p className="text-muted-foreground text-lg leading-relaxed max-w-4xl">
                         En Gestor de Partes buscamos la transparencia. Conoce las condiciones y procesos para realizar devoluciones de refacciones.
                     </p>
                 </div>

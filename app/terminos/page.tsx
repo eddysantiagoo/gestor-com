@@ -1,18 +1,27 @@
-import { ShieldCheck, RefreshCw, FileText, AlertTriangle } from "lucide-react";
+import { ShieldCheck, RefreshCw, FileText, AlertTriangle, ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 export default function TerminosPage() {
     return (
         <main className="min-h-screen py-16 bg-background">
             <div className="max-w-[1200px] mx-auto px-5">
-                {/* Hero Header */}
-                <div className="mb-16 text-center">
+
+                {/* Breadcrumb */}
+                <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-12">
+                    <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+                    <ChevronRight size={14} />
+                    <span className="text-foreground font-medium">Términos y Condiciones</span>
+                </nav>
+
+                {/* Header */}
+                <div className="mb-16">
                     <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4 uppercase tracking-tight">
-                        Términos y Políticas
+                        Términos y Condiciones
                     </h1>
-                    <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+                    <div className="w-24 h-1 bg-primary rounded-full mb-6"></div>
+                    <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl">
                         Esta información puede someterse a cambios de acuerdo a los procesos y políticas de Gestor de Partes.
                     </p>
-                    <div className="w-24 h-1 bg-primary mx-auto mt-6 rounded-full"></div>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
@@ -114,4 +123,5 @@ export default function TerminosPage() {
         </main>
     );
 }
+
 

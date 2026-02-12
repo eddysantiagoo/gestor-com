@@ -1,18 +1,27 @@
-import { Shield, UserCheck, Mail, Cookie, Link as LinkIcon, Lock, Eye } from "lucide-react";
+import { Shield, UserCheck, Mail, Cookie, Link as LinkIcon, Lock, Eye, ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 export default function PrivacidadPage() {
     return (
         <main className="min-h-screen py-16 bg-background">
             <div className="max-w-[1200px] mx-auto px-5">
+
+                {/* Breadcrumb */}
+                <nav className="flex items-center gap-2 text-sm text-muted-foreground mb-12">
+                    <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+                    <ChevronRight size={14} />
+                    <span className="text-foreground font-medium">Políticas de Privacidad</span>
+                </nav>
+
                 {/* Header */}
-                <div className="mb-16 text-center">
+                <div className="mb-16">
                     <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4 uppercase tracking-tight">
                         Políticas de Privacidad
                     </h1>
-                    <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+                    <div className="w-24 h-1 bg-primary rounded-full mb-6"></div>
+                    <p className="text-muted-foreground text-lg leading-relaxed max-w-2xl">
                         En Gestor de Partes estamos comprometidos con la seguridad y protección de los datos de nuestros usuarios.
                     </p>
-                    <div className="w-24 h-1 bg-primary mx-auto mt-6 rounded-full"></div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -123,4 +132,5 @@ export default function PrivacidadPage() {
         </main>
     );
 }
+
 
