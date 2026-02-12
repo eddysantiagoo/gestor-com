@@ -12,7 +12,10 @@
     "contact": "Contact",
     "search_placeholder": "Search parts, brands...",
     "search_button": "Search",
-    "login": "Login"
+    "login": "Login",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
   },
   "Hero": {
     "turbos_title": "TURBO\nCHARGERS.",

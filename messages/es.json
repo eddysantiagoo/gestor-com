@@ -12,7 +12,10 @@
     "contact": "Contacto",
     "search_placeholder": "Buscar refacciones, marcas de auto...",
     "search_button": "Buscar",
-    "login": "Iniciar sesión"
+    "login": "Iniciar sesión",
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema"
   },
   "Hero": {
     "turbos_title": "TURBO\nCARGADORES.",

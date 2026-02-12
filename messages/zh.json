@@ -12,7 +12,10 @@
     "contact": "联系我们",
     "search_placeholder": "搜索零件、品牌...",
     "search_button": "搜索",
-    "login": "登录"
+    "login": "登录",
+    "light": "明亮",
+    "dark": "黑暗",
+    "system": "系统"
   },
   "Hero": {
     "turbos_title": "涡轮\n增压器。",
