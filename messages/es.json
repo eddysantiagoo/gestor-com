@@ -1,0 +1,57 @@
+{
+  "Header": {
+    "store": "Tienda",
+    "catalogs": "Catálogos",
+    "about": "¿Quiénes Somos?",
+    "about_link": "Sobre Nosotros",
+    "delivery": "Información de entregas",
+    "privacy": "Políticas de privacidad",
+    "terms": "Términos & Condiciones",
+    "returns": "Políticas de devoluciones",
+    "warranty": "Políticas de garantía",
+    "contact": "Contacto"
+  },
+  "Hero": {
+    "turbos_title": "TURBO\nCARGADORES.",
+    "turbos_desc": "¡Compra ahora y siente la diferencia! Potencia industrial garantizada para maquinaria pesada.",
+    "excavators_title": "EXCAVADORAS\nPESADAS.",
+    "excavators_desc": "Componentes críticos para excavadoras de alto rendimiento. Mantenemos tu obra en movimiento con refacciones premium.",
+    "motors_title": "MOTORES\nDIESEL.",
+    "motors_desc": "Motores completos y refacciones internas. Durabilidad extrema para las condiciones industriales más exigentes.",
+    "view_catalog": "VER CATÁLOGO",
+    "explore_parts": "EXPLORAR PARTES",
+    "view_motors": "VER MOTORES",
+    "support": "SOPORTE TÉCNICO"
+  },
+  "Categories": {
+    "title": "Categorías Destacadas",
+    "view_all": "Ver Todas las Categorías",
+    "view_products": "Ver productos",
+    "desc": "Encuentra refacciones para todo tipo de maquinaria pesada. Calidad y garantía en cada pieza.",
+    "motor_parts": "Repuestos para motor",
+    "undercarriage": "Tren de rodaje",
+    "crankshaft": "Cigüeñal de motor",
+    "lubricants": "Lubricantes de alta calidad",
+    "oils_filters": "Aceites y filtros",
+    "parts_manual": "Manual de partes"
+  },
+  "WhyChooseUs": {
+    "title": "¿Por qué elegirnos?",
+    "desc": "Calidad, confianza y experiencia en cada una de nuestras piezas.",
+    "inv_title": "Inventario Masivo",
+    "inv_desc": "Más de 50,000 números de parte listos para envío inmediato. Todo lo que necesitas en un solo lugar.",
+    "shipping_title": "Envíos Rápidos",
+    "shipping_desc": "Logística optimizada para entregar tus refacciones donde las necesites, en tiempo récord.",
+    "quality_title": "Calidad Garantizada",
+    "quality_desc": "Solo trabajamos con marcas líderes y productos certificados para asegurar la durabilidad de tu maquinaria.",
+    "support_title": "Soporte Técnico",
+    "support_desc": "Nuestro equipo de expertos te asesora para encontrar la pieza exacta que necesitas."
+  },
+  "Footer": {
+    "products": "PRODUCTOS",
+    "company": "COMPAÑÍA",
+    "contact": "CONTACTO",
+    "rights": "Todos los derechos reservados.",
+    "slogan": "Tu aliado estratégico en refacciones automotrices y equipo especializado. Calidad que mueve al mundo."
+  }
+}

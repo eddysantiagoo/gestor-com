@@ -1,8 +1,12 @@
-import Link from 'next/link';
+import { useTranslations } from 'next-intl';
+import { Link } from '../../../i18n/navigation';
 import Image from 'next/image';
 import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
+    const t = useTranslations('Footer');
+    const h = useTranslations('Header');
+
     return (
         <>
             <footer className="bg-[#1a1a1a] text-white pt-[50px] pb-[20px] px-5 relative mt-auto">
@@ -22,34 +26,34 @@ export default function Footer() {
                                 </div>
                             </div>
                             <p className="text-[#999] text-[13px] leading-[1.6] mt-[15px]">
-                                Tu aliado estratégico en refacciones automotrices y equipo especializado. Calidad que mueve al mundo.
+                                {t('slogan')}
                             </p>
                         </div>
 
                         {/* Productos Column */}
                         <div>
-                            <h3 className="text-[14px] font-bold mb-5 uppercase tracking-[1px]">PRODUCTOS</h3>
+                            <h3 className="text-[14px] font-bold mb-5 uppercase tracking-[1px]">{t('products')}</h3>
                             <ul className="list-none p-0 m-0 space-y-3">
-                                <li><Link href="#" className="text-[#999] no-underline text-[13px] hover:text-primary transition-colors">Turbocargadores</Link></li>
-                                <li><Link href="#" className="text-[#999] no-underline text-[13px] hover:text-primary transition-colors">Inyectores de inyección</Link></li>
-                                <li><Link href="#" className="text-[#999] no-underline text-[13px] hover:text-primary transition-colors">Partes de Motor</Link></li>
+                                <li><Link href="https://tienda.gestordepartes.com/es/categories/turbos/products" target="_blank" className="text-[#999] no-underline text-[13px] hover:text-primary transition-colors">Turbocargadores</Link></li>
+                                <li><Link href="https://tienda.gestordepartes.com/es/categories/inyectores/products" target="_blank" className="text-[#999] no-underline text-[13px] hover:text-primary transition-colors">Inyectores de inyección</Link></li>
+                                <li><Link href="https://tienda.gestordepartes.com/es/categories/motor/products" target="_blank" className="text-[#999] no-underline text-[13px] hover:text-primary transition-colors">Partes de Motor</Link></li>
                             </ul>
                         </div>
 
                         {/* Compañía Column */}
                         <div>
-                            <h3 className="text-[14px] font-bold mb-5 uppercase tracking-[1px]">COMPAÑÍA</h3>
+                            <h3 className="text-[14px] font-bold mb-5 uppercase tracking-[1px]">{t('company')}</h3>
                             <ul className="list-none p-0 m-0 space-y-3">
-                                <li><Link href="/nosotros" className="text-[#999] no-underline text-[13px] hover:text-primary transition-colors">Sobre Nosotros</Link></li>
-                                <li><Link href="/contacto" className="text-[#999] no-underline text-[13px] hover:text-primary transition-colors">Contacto</Link></li>
-                                <li><Link href="/privacidad" className="text-[#999] no-underline text-[13px] hover:text-primary transition-colors">Privacidad</Link></li>
-                                <li><Link href="/terminos" className="text-[#999] no-underline text-[13px] hover:text-primary transition-colors">Términos</Link></li>
+                                <li><Link href="/nosotros" className="text-[#999] no-underline text-[13px] hover:text-primary transition-colors">{h('about_link')}</Link></li>
+                                <li><Link href="/contacto" className="text-[#999] no-underline text-[13px] hover:text-primary transition-colors">{h('contact')}</Link></li>
+                                <li><Link href="/privacidad" className="text-[#999] no-underline text-[13px] hover:text-primary transition-colors">{h('privacy')}</Link></li>
+                                <li><Link href="/terminos" className="text-[#999] no-underline text-[13px] hover:text-primary transition-colors">{h('terms')}</Link></li>
                             </ul>
                         </div>
 
                         {/* Contacto Column */}
                         <div>
-                            <h3 className="text-[14px] font-bold mb-5 uppercase tracking-[1px]">CONTACTO</h3>
+                            <h3 className="text-[14px] font-bold mb-5 uppercase tracking-[1px]">{t('contact')}</h3>
                             <div className="flex items-center gap-[10px] mb-3 text-[#999] text-[13px]">
                                 <Mail size={16} />
                                 <span>contacto@gestordepartes.com</span>
@@ -70,7 +74,7 @@ export default function Footer() {
                     {/* Footer Bottom */}
                     <div className="border-t border-[#333] pt-[20px] text-center">
                         <p className="text-[#666] text-[12px]">
-                            &copy; 2026 Gestor de Partes. Todos los derechos reservados.
+                            &copy; 2026 Gestor de Partes. {t('rights')}
                         </p>
                     </div>
                 </div>

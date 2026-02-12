@@ -3,39 +3,42 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
-const slides = [
-    {
-        title: "TURBO\nCARGADORES.",
-        description: "¡Compra ahora y siente la diferencia! Potencia industrial garantizada para maquinaria pesada.",
-        image: "/banner/1.webp",
-        action: "VER CATÁLOGO",
-        link: "#"
-    },
-    {
-        title: "EXCAVADORAS\nPESADAS.",
-        description: "Componentes críticos para excavadoras de alto rendimiento. Mantenemos tu obra en movimiento con refacciones premium.",
-        image: "/banner/2.webp",
-        action: "EXPLORAR PARTES",
-        link: "#"
-    },
-    {
-        title: "MOTORES\nDIESEL.",
-        description: "Motores completos y refacciones internas. Durabilidad extrema para las condiciones industriales más exigentes.",
-        image: "/banner/3.webp",
-        action: "VER MOTORES",
-        link: "#"
-    }
-];
+import { useTranslations } from 'next-intl';
 
 export default function Hero() {
+    const t = useTranslations('Hero');
     const [current, setCurrent] = useState(0);
+
+    const slides = [
+        {
+            title: t('turbos_title'),
+            description: t('turbos_desc'),
+            image: "/banner/1.webp",
+            action: t('view_catalog'),
+            link: "#"
+        },
+        {
+            title: t('excavators_title'),
+            description: t('excavators_desc'),
+            image: "/banner/2.webp",
+            action: t('explore_parts'),
+            link: "#"
+        },
+        {
+            title: t('motors_title'),
+            description: t('motors_desc'),
+            image: "/banner/3.webp",
+            action: t('view_motors'),
+            link: "#"
+        }
+    ];
 
     useEffect(() => {
         const timer = setInterval(() => {
             setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
         }, 6000);
         return () => clearInterval(timer);
-    }, []);
+    }, [slides.length]);
 
     const nextSlide = () => {
         setCurrent((prev) => (prev === slides.length - 1 ? 0 : prev + 1));
@@ -78,7 +81,7 @@ export default function Hero() {
                                     {slide.action}
                                 </button>
                                 <button className="py-4 px-10 border-2 border-white rounded-[5px] text-sm font-bold cursor-pointer uppercase tracking-wider bg-transparent text-white hover:bg-white/10 transition-colors active:scale-95">
-                                    SOPORTE TECNICO
+                                    {t('support')}
                                 </button>
                             </div>
                         </div>

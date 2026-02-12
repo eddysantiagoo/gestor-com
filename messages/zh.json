@@ -1,0 +1,57 @@
+{
+  "Header": {
+    "store": "商店",
+    "catalogs": "目录",
+    "about": "关于我们",
+    "about_link": "关于我们",
+    "delivery": "送货信息",
+    "privacy": "隐私政策",
+    "terms": "条款和条件",
+    "returns": "退货政策",
+    "warranty": "保修政策",
+    "contact": "联系我们"
+  },
+  "Hero": {
+    "turbos_title": "涡轮\n增压器。",
+    "turbos_desc": "立即购买，感受与众不同！为重型机械提供工业动力保证。",
+    "excavators_title": "重型\n挖掘机。",
+    "excavators_desc": "高性能挖掘机的关键部件。我们通过优质配件让您的施工现场保持运转。",
+    "motors_title": "柴油\n发动机。",
+    "motors_desc": "全机及内部零件。为最苛刻的工业条件提供极高的耐用性。",
+    "view_catalog": "查看目录",
+    "explore_parts": "探索零件",
+    "view_motors": "查看发动机",
+    "support": "技术支持"
+  },
+  "Categories": {
+    "title": "精选类别",
+    "view_all": "查看所有类别",
+    "view_products": "查看产品",
+    "desc": "查找各类重型机械的替换件。每一件产品都有质量和保修保证。",
+    "motor_parts": "发动机配件",
+    "undercarriage": "底盘系统",
+    "crankshaft": "发动机曲轴",
+    "lubricants": "优质润滑剂",
+    "oils_filters": "机油和滤清器",
+    "parts_manual": "零件手册"
+  },
+  "WhyChooseUs": {
+    "title": "为什么选择我们？",
+    "desc": "我们的每一个零件都具有质量、信任和经验。",
+    "inv_title": "海量库存",
+    "inv_desc": "超过 50,000 个零件编号，随时可以立即发货。您所需的一切尽在一个地方。",
+    "shipping_title": "快速发货",
+    "shipping_desc": "优化的物流，在创纪录的时间内将您需要的零件送到您手中。",
+    "quality_title": "质量保证",
+    "quality_desc": "我们仅与领先品牌和经过认证的产品合作，以确保您的机械耐用。",
+    "support_title": "技术支持",
+    "support_desc": "我们的专家团队为您提供建议，帮助您找到所需的确切零件。"
+  },
+  "Footer": {
+    "products": "产品",
+    "company": "公司",
+    "contact": "联系方式",
+    "rights": "版权所有。",
+    "slogan": "您在汽车零部件和专业设备方面的战略盟友。质量推动世界。"
+  }
+}

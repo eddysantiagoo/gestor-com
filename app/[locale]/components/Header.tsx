@@ -1,9 +1,35 @@
-import Link from 'next/link';
+"use client";
+
 import Image from 'next/image';
 import { ModeToggle } from "@/components/mode-toggle";
 import { Search, ShoppingCart, User, Globe, ChevronDown } from "lucide-react";
+import { useTranslations, useLocale } from 'next-intl';
+import { Link, usePathname, useRouter } from '../../../i18n/navigation';
+import {
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export default function Header() {
+    const t = useTranslations('Header');
+    const locale = useLocale();
+    const router = useRouter();
+    const pathname = usePathname();
+
+    const languages = [
+        { code: 'es', name: 'Español' },
+        { code: 'en', name: 'English' },
+        { code: 'zh', name: '中文' },
+    ];
+
+    const currentLanguage = languages.find(l => l.code === locale)?.name || 'Español';
+
+    const handleLanguageChange = (newLocale: string) => {
+        router.replace(pathname, { locale: newLocale });
+    };
+
     return (
         <>
             {/* Header */}
@@ -68,18 +94,18 @@ export default function Header() {
                     <ul className="flex gap-[30px] list-none p-0 m-0 items-center">
                         <li>
                             <Link href="https://tienda.gestordepartes.com/" target='_blank' className="text-foreground no-underline text-sm font-medium hover:text-primary transition-colors flex items-center">
-                                Tienda
+                                {t('store')}
                             </Link>
                         </li>
                         <li>
                             <Link href="https://catalogo.gestordepartes.com/" target='_blank' className="text-foreground no-underline text-sm font-medium hover:text-primary transition-colors flex items-center">
-                                Catalogos
+                                {t('catalogs')}
                             </Link>
                         </li>
                         {/* Dropdown Menu */}
                         <li className="relative group flex items-center">
                             <span className="text-foreground no-underline text-sm font-medium cursor-pointer flex items-center gap-1 group-hover:text-primary transition-colors">
-                                ¿Quienes Somos? <ChevronDown size={12} className="group-hover:rotate-180 transition-transform" />
+                                {t('about')} <ChevronDown size={12} className="group-hover:rotate-180 transition-transform" />
                             </span>
 
                             {/* Dropdown Content */}
@@ -87,32 +113,32 @@ export default function Header() {
                                 <ul className="bg-background border border-border shadow-lg rounded-lg py-2 min-w-[220px]">
                                     <li>
                                         <Link href="/nosotros" className="block px-4 py-2 text-sm text-foreground hover:bg-muted hover:text-primary transition-colors border-b border-border/50 mb-1 font-bold">
-                                            Sobre Nosotros
+                                            {t('about_link')}
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="/entregas" className="block px-4 py-2 text-sm text-foreground hover:bg-muted hover:text-primary transition-colors">
-                                            Información de entregas
+                                            {t('delivery')}
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="/privacidad" className="block px-4 py-2 text-sm text-foreground hover:bg-muted hover:text-primary transition-colors">
-                                            Políticas de privacidad
+                                            {t('privacy')}
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="/terminos" className="block px-4 py-2 text-sm text-foreground hover:bg-muted hover:text-primary transition-colors">
-                                            Términos & Condiciones
+                                            {t('terms')}
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="/devoluciones" className="block px-4 py-2 text-sm text-foreground hover:bg-muted hover:text-primary transition-colors">
-                                            Políticas de devoluciones
+                                            {t('returns')}
                                         </Link>
                                     </li>
                                     <li>
                                         <Link href="/garantias" className="block px-4 py-2 text-sm text-foreground hover:bg-muted hover:text-primary transition-colors">
-                                            Políticas de garantía
+                                            {t('warranty')}
                                         </Link>
                                     </li>
                                 </ul>
@@ -120,13 +146,30 @@ export default function Header() {
                         </li>
                         <li>
                             <Link href="/contacto" className="text-foreground no-underline text-sm font-medium hover:text-primary transition-colors flex items-center">
-                                Contacto
+                                {t('contact')}
                             </Link>
                         </li>
                     </ul>
-                    <div className="flex items-center gap-[5px] text-sm cursor-pointer text-foreground">
-                        <Globe size={16} /> Español <ChevronDown size={12} />
-                    </div>
+
+                    {/* Language Switcher */}
+                    <DropdownMenu>
+                        <DropdownMenuTrigger asChild>
+                            <div className="flex items-center gap-[5px] text-sm cursor-pointer text-foreground hover:text-primary transition-colors outline-none">
+                                <Globe size={16} /> {currentLanguage} <ChevronDown size={12} />
+                            </div>
+                        </DropdownMenuTrigger>
+                        <DropdownMenuContent align="end" className="bg-background border-border shadow-xl">
+                            {languages.map((lang) => (
+                                <DropdownMenuItem
+                                    key={lang.code}
+                                    onClick={() => handleLanguageChange(lang.code)}
+                                    className={`cursor-pointer ${locale === lang.code ? 'text-primary font-bold' : ''}`}
+                                >
+                                    {lang.name}
+                                </DropdownMenuItem>
+                            ))}
+                        </DropdownMenuContent>
+                    </DropdownMenu>
                 </div>
             </nav>
         </>

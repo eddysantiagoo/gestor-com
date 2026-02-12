@@ -1,0 +1,57 @@
+{
+  "Header": {
+    "store": "Shop",
+    "catalogs": "Catalogs",
+    "about": "About Us",
+    "about_link": "About Us",
+    "delivery": "Delivery Information",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "returns": "Return Policy",
+    "warranty": "Warranty Policy",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "turbos_title": "TURBO\nCHARGERS.",
+    "turbos_desc": "Buy now and feel the difference! Industrial power guaranteed for heavy machinery.",
+    "excavators_title": "HEAVY\nEXCAVATORS.",
+    "excavators_desc": "Critical components for high-performance excavators. We keep your site moving with premium parts.",
+    "motors_title": "DIESEL\nENGINES.",
+    "motors_desc": "Complete engines and internal parts. Extreme durability for the most demanding industrial conditions.",
+    "view_catalog": "VIEW CATALOG",
+    "explore_parts": "EXPLORE PARTS",
+    "view_motors": "VIEW ENGINES",
+    "support": "TECHNICAL SUPPORT"
+  },
+  "Categories": {
+    "title": "Featured Categories",
+    "view_all": "View All Categories",
+    "view_products": "View products",
+    "desc": "Find replacements for all types of heavy machinery. Quality and warranty in every piece.",
+    "motor_parts": "Engine replacements",
+    "undercarriage": "Undercarriage",
+    "crankshaft": "Engine crankshaft",
+    "lubricants": "High quality lubricants",
+    "oils_filters": "Oils and filters",
+    "parts_manual": "Parts manual"
+  },
+  "WhyChooseUs": {
+    "title": "Why Choose Us?",
+    "desc": "Quality, trust, and experience in each of our parts.",
+    "inv_title": "Massive Inventory",
+    "inv_desc": "More than 50,000 part numbers ready for immediate shipping. Everything you need in one place.",
+    "shipping_title": "Fast Shipping",
+    "shipping_desc": "Optimized logistics to deliver your parts where you need them, in record time.",
+    "quality_title": "Guaranteed Quality",
+    "quality_desc": "We only work with leading brands and certified products to ensure the durability of your machinery.",
+    "support_title": "Technical Support",
+    "support_desc": "Our team of experts advises you to find the exact part you need."
+  },
+  "Footer": {
+    "products": "PRODUCTS",
+    "company": "COMPANY",
+    "contact": "CONTACT",
+    "rights": "All rights reserved.",
+    "slogan": "Your strategic ally in automotive spare parts and specialized equipment. Quality that moves the world."
+  }
+}
