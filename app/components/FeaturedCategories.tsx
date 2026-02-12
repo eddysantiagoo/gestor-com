@@ -4,38 +4,44 @@ const categories = [
     {
         id: 1,
         title: 'Motores Diésel',
-        image: 'https://images.unsplash.com/photo-1595183321522-834c9c7f1a3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', // Engine placeholder
-        link: '#'
+        image: 'https://images.unsplash.com/photo-1595183321522-834c9c7f1a3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        link: '#',
+        gridClass: 'md:col-span-2 md:row-span-2'
     },
     {
         id: 2,
         title: 'Transmisiones',
-        image: 'https://images.unsplash.com/photo-1616401666679-b1d5c2e9d2f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', // Gear/Transmission placeholder
-        link: '#'
+        image: 'https://images.unsplash.com/photo-1616401666679-b1d5c2e9d2f3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        link: '#',
+        gridClass: 'md:col-span-2 md:row-span-1'
     },
     {
         id: 3,
         title: 'Sistemas Hidráulicos',
-        image: 'https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', // Hydraulics placeholder
-        link: '#'
+        image: 'https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        link: '#',
+        gridClass: 'md:col-span-1 md:row-span-1'
     },
     {
         id: 4,
         title: 'Tren de Rodaje',
-        image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', // Caterpillary tracks placeholder
-        link: '#'
+        image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        link: '#',
+        gridClass: 'md:col-span-1 md:row-span-1'
     },
     {
         id: 5,
         title: 'Cabinas y Lunas',
-        image: 'https://images.unsplash.com/photo-1542621334-a254cf47733d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', // Cabin placeholder
-        link: '#'
+        image: 'https://images.unsplash.com/photo-1542621334-a254cf47733d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        link: '#',
+        gridClass: 'md:col-span-2 md:row-span-1'
     },
     {
         id: 6,
         title: 'Mandos Finales',
-        image: 'https://images.unsplash.com/photo-1531297461136-82lw8e2d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80', // Generic heavy metal part
-        link: '#'
+        image: 'https://images.unsplash.com/photo-1531297461136-82lw8e2d4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+        link: '#',
+        gridClass: 'md:col-span-2 md:row-span-1'
     }
 ];
 
@@ -53,15 +59,15 @@ export default function FeaturedCategories() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-4 auto-rows-[200px] md:auto-rows-[240px] gap-6">
                     {categories.map((category) => (
                         <Link
                             href={category.link}
                             key={category.id}
-                            className="group relative block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 bg-card"
+                            className={`group relative block overflow-hidden rounded-lg shadow-md hover:shadow-xl transition-all duration-300 bg-card ${category.gridClass}`}
                         >
                             {/* Image Container */}
-                            <div className="relative h-64 overflow-hidden">
+                            <div className="relative h-full w-full overflow-hidden">
                                 <div
                                     className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110"
                                     style={{ backgroundImage: `url('${category.image}')` }}
@@ -85,7 +91,7 @@ export default function FeaturedCategories() {
                 <div className="text-center mt-12">
                     <Link
                         href="#"
-                        className="inline-block py-3 px-8 bg-foreground text-background font-bold rounded hover:bg-primary hover:text-primary-foreground transition-colors duration-300 uppercase tracking-wide"
+                        className="inline-block py-4 px-10 bg-foreground text-background font-bold rounded-lg hover:bg-primary hover:text-primary-foreground transition-all duration-300 uppercase tracking-wide shadow-lg"
                     >
                         Ver Todas las Categorías
                     </Link>
@@ -94,3 +100,4 @@ export default function FeaturedCategories() {
         </section>
     );
 }
+

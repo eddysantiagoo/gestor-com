@@ -17,7 +17,7 @@ export default function Footer() {
                                         alt="Gestor de Partes Logo"
                                         width={120}
                                         height={40}
-                                        className="h-auto w-auto brightness-0 invert opacity-80"
+                                        className="h-auto w-auto"
                                     />
                                 </div>
                             </div>
